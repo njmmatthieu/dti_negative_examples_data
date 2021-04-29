@@ -45,9 +45,19 @@ The results of the targets prediction for the 3 drugs {DB11363, DB11842, DB11732
   - Non-balanced training sets (RN-datasets like) : *DB11732_predictions_non_balanced_training_sets.csv*
   - Balanced training sets (BN-datasets like) : *DB11732_predictions_balanced_training_sets.csv*
 
-## 200-dataset
+## 200-positive-dataset
 
-The results of the predictions for the 200 DTIs corresponding to the 200 marketed drugs are displayed in the file *200-dataset_results.csv* with the columns:
+The results of the predictions for the 200 positive DTIs corresponding to the 200 marketed drugs are displayed in the file *200-positive-dataset_results.csv* with the columns:
+  - DrugBank ID
+  - UniProt ID
+  - Rank - balanced : Rank of the removed DTI when training sets are balanced
+  - Score - balanced : Score of the removed DTI when training sets are balanced
+  - Rank - non balanced : Rank of the removed DTI when training sets are not balanced
+  - Score - non balanced : Score of the removed DTI when training sets are not balanced
+
+## 200-negative-dataset
+
+The results of the predictions for the 200 negative DTIs corresponding to the 200 marketed drugs are displayed in the file *200-negative-dataset_results.csv* with the columns:
   - DrugBank ID
   - UniProt ID
   - Rank - balanced : Rank of the removed DTI when training sets are balanced
